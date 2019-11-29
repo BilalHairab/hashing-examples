@@ -111,7 +111,7 @@ class MD5ManualComputer {
             d += originalD;
         }
 
-
+        //The final md5 value will be the concatenated byte arrays of a, b, c and d
         byte[] md5 = new byte[16];
         int count = 0;
         for (int i = 0; i < 4; i++) {
