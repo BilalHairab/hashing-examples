@@ -4,5 +4,8 @@ public class Hasher {
         System.out.println("\n\nOriginal Message to hash   ==> \'" + message + "\'\n");
         String manualHash = MD5ManualComputer.computeMD5(message);
         System.out.println("Computed Hash by task code ==> " + manualHash + "\n");
+        String apiHash = MD5APIComputer.computeMD5(message);
+        System.out.println("Computed Hash by JAVA APIs ==> " + apiHash + "\n");
+        System.out.println("Are they equal?\n" + manualHash.contentEquals(apiHash));
     }
 }
